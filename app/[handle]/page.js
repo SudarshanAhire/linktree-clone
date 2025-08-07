@@ -42,8 +42,8 @@ export default async function Page({ params }) {
     }
     return <div className="flex min-h-screen bg-purple-400 justify-center items-start py-10">
         {item && <div className="photo flex justify-center flex-col items-center gap-4"> 
-            {/* <Image src={item.pic} alt="" /> */}
-            <Image src={item.pic} alt="" width={100} height={100} />
+            <img src={item.pic} alt="" />
+            {/* <Image src={item.pic} alt="" width={100} height={100} /> */}
             <span className="font-bold text-xl">@{item.handle}</span>
             <span className="desc w-80 text-center">{item.desc}</span>
             <div className="links">

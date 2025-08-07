@@ -6,11 +6,11 @@ import { usePathname } from "next/navigation";
 
 const Navbar = () => {
 
-  // const pathname = usePathname()
-  // const showNavbar = ["/", "/generate"].includes(window.location.pathname)
+  const pathname = usePathname()
+  const showNavbar = ["/", "/generate"].includes(window.location.pathname)
 
-  const pathname = usePathname();
-  const showNavbar = ["/", "/generate"].includes(pathname);
+  // const pathname = usePathname();
+  // const showNavbar = ["/", "/generate"].includes(pathname);
 
 
   return (<>
