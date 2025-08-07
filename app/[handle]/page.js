@@ -1,6 +1,8 @@
 import Link from "next/link"
 import clientPromise from "@/lib/mongodb"
 import { notFound } from "next/navigation";
+import Image from 'next/image';
+
 
 export default async function Page({ params }) {
     const handle = (await params).handle
